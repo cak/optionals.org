@@ -1,0 +1,80 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+h2 {
+  display: inline;
+  color: #eaded0;
+  font-size: 24px;
+}
+
+p {
+  font-size: 8px;
+  color: #eaded0;
+  text-align: right;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: #eaded0;
+  font-size: 55px;
+}
+
+hr {
+  border-width: 3px 0 0 0;
+  border-style: solid;
+  border-color: #6489b8;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #0b121c;
+  color: #c2c7fe;
+  text-align: left;
+  padding: 0px 0px 5px 2px;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  display: block;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: normal;
+}
+
+span.bang {
+  color: #792e9a;
+}
+
+span.quest {
+  color: #4ac361;
+}
+
+span {
+  display: inline;
+}
+
+span.keyword {
+  color: #792e9a;
+}
+
+span.type {
+  color: #6489b8;
+}
+
+span.call {
+  color: #c1c319;
+}
+
+span.string {
+  color: #4ac361;
+}
+
+span.number {
+  color: #ffb09f;
+}
+
+a {
+  color: #6489b8;
+  text-decoration: none;
+}
