@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Swift Optionals</title>
-    <title>Unwrapping Optionals</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<html lang="en" >
 
-  <body>
-    <h1>Opt<span id="heading">i</span>onals</h1>
-    <h2>optionals</h2>
-    <span class="keyword">let</span> optional: <span class="type">String</span>? = <span class="string">"unicorn"</span>
-    <span class="keyword">let</span> optionals: [<span class="type">String</span>?] = [<span class="string">"unicorn"</span>, nil, <span class="string">"dragon"</span>]
-    <hr />
-    <h2>if let</h2>
-    <span class="keyword">if let</span> value = optional {
+<head>
+  <meta charset="UTF-8">
+  <title>Swift Optionals</title>
+  <title>Unwrapping Optionals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <h2>guard</h2>
-    <span class="keyword">guard let</span> value = optional <span class="keyword">else</span> { <span class="keyword">return</span> }
+<body>
+<h1>Opt<span id=heading>i</span>onals</h1>
+<h2>optionals </h2>
+<span class="keyword">let</span> optional: <span class="type">String</span>? = <span class="string">"unicorn"</span>
+<span class="keyword">let</span> optionals: [<span class="type">String</span>?] = [<span class="string">"unicorn"</span>, nil, <span class="string">"dragon"</span>]
+<hr>
+<h2>if let</h2>
+<span class="keyword">if let</span> value = optional {
 
-    <h2>nil coalescing</h2>
-    <span class="keyword">let</span> value = optional ?? <span class="string">"unknown"</span>
+<h2>guard</h2>
+<span class="keyword">guard let</span> value = optional <span class="keyword">else</span> { <span class="keyword">return</span> }
 
-    <h2>ternary conditional</h2>
-    <span class="keyword">let</span> value = optional != <span class="keyword">nil</span> ? optional! : <span class="string">"unknown"</span>
+<h2>nil coalescing</h2>
+<span class="keyword">let</span> value = optional ?? <span class="string">"unknown"</span>
 
-    <h2>forced unwrapped</h2>
-    <span class="keyword">let</span> value = optional!
+<h2>ternary conditional</h2>
+<span class="keyword">let</span> value = optional != <span class="keyword">nil</span> ? optional! : <span class="string">"unknown"</span>
 
-    <h2>switch block</h2>
-    <span class="keyword">switch</span> optional {
-    <span class="keyword">case let</span> value?:
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(value) 
-    <span class="keyword">default</span>:
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"unknown"</span>)
-    }
+<h2>forced unwrapped</h2>
+<span class="keyword">let</span> value = optional!
 
-    <h2>map()</h2>
-    optional.<span class="call">map</span> { print($<span class="number">0</span>) }
+<h2>switch block</h2>
+<span class="keyword">switch</span> optional {
+<span class="keyword">case let</span> value?:
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(value)
+<span class="keyword">default</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"unknown"</span>)
+}
 
-    <h2>compactMap()</h2>
-    <span class="keyword">let</span> values = optionals.<span class="call">compactMap</span> { $<span class="number">0</span> }
+<h2>map()</h2>
+optional.<span class="call">map</span> { print($<span class="number">0</span>) }
 
-    <h2>type casting</h2>
-    <span class="keyword">let</span> value = optional <span class="keyword">as</span>! <span class="type">String</span>
+<h2>compactMap()</h2>
+<span class="keyword">let</span> values = optionals.<span class="call">compactMap</span> { $<span class="number">0</span> }
 
-    <h2>optional chaining</h2>
-    <span class="keyword">let</span> value = optional?.<span class="call">uppercased</span>()
+<h2>type casting</h2>
+<span class="keyword">let</span> value = optional <span class="keyword">as</span>! <span class="type">String</span>
 
-    <br />
-    <p>Created by <a href="https://github.com/cak">cak</a> with syntax highlighting by <a href="https://github.com/JohnSundell/Splash">Splash</a>.</p>
-    <p>Contribute to this project on <a href="">GitHub</a>.</p>
+<h2>optional chaining</h2>
+<span class="keyword">let</span> value = optional?.<span class="call">uppercased</span>()
 
-    <script src="js/index.js"></script>
-  </body>
+<br>
+<p>Created by <a href="https://github.com/cak">cak</a> with syntax highlighting by <a href="https://github.com/JohnSundell/Splash">Splash</a>.</p>
+<p>Contribute to this project on <a href="https://github.com/cak/optionals.org">GitHub</a>.</p>
+
+<script  src="js/index.js"></script>
+</body>
 </html>
