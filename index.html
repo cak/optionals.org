@@ -13,8 +13,9 @@
 <h1>opt<span id=heading>i</span>onals</h1>
 <h2>the optionals</h2>
 <span class="keyword">let</span> optional: <span class="type">String</span>? = <span class="string">"unicorn"</span>
-<span class="keyword">let</span> optional2: <span class="type">Int</span>? = <span class="keyword">nil</span>
+<span class="keyword">var</span> optional2: <span class="type">Int</span>? = <span class="keyword">nil</span>
 <span class="keyword">let</span> optionals: [<span class="type">String</span>?] = [<span class="string">"unicorn"</span>, <span class="keyword">nil</span>, <span class="string">"dragon"</span>]
+<span class="keyword">var</span> optionals2: [<span class="type">Int</span>]? = <span class="keyword">nil</span>
 <hr>
 
 <h2>if let</h2>
@@ -29,18 +30,15 @@
 <h2>nil coalescing</h2>
 <span class="keyword">let</span> value = optional ?? <span class="string">"nil"</span>
 
-<h2>ternary conditional</h2>
-<span class="keyword">let</span> value = optional != <span class="keyword">nil</span> ? optional! : <span class="string">"nil"</span>
-
 <h2>force unwrapping</h2>
 <span class="keyword">let</span> value = optional!
 
 <h2>switch block</h2>
 <span class="keyword">switch</span> optional {
 <span class="keyword">case</span> .<span class="dotAccess">some</span>(<span class="keyword">let</span> value):
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(value)
+&nbsp;&nbsp;<span class="call">print</span>(value)
 <span class="keyword">case</span> .<span class="dotAccess">none</span>:
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"nil"</span>)
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"nil"</span>)
 }
 
 <h2>map()</h2>
@@ -58,8 +56,18 @@ optional.<span class="call">map</span> { print($<span class="number">0</span>) }
 <h2>optional chaining</h2>
 <span class="keyword">let</span> value = optional?.<span class="call">uppercased</span>()
 
-<h2>iteration</h2>
+<h2>for loop</h2>
+<span class="keyword">for</span> element <span class="keyword">in</span> optionals {
+&nbsp;&nbsp;<span class="keyword">if let</span> value = element {
+
+<h2>for case let</h2>
 <span class="keyword">for case let</span> optional? <span class="keyword">in</span> optionals {
+
+<h2>for case .some</h2>
+<span class="keyword">for case</span> .<span class="dotAccess">some</span>(<span class="keyword">let</span> value) <span class="keyword">in</span> optionals {
+
+<h2>forEach</h2>
+optionals2?.<span class="property">forEach</span>{ value <span class="keyword">in</span>
 
 <br>
 <p>Created by <a href="https://github.com/cak">cak</a> with syntax highlighting by <a href="https://github.com/JohnSundell/Splash">Splash</a>.</p>
