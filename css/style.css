@@ -4,6 +4,12 @@ h2 {
   font-size: 22px;
 }
 
+h3 {
+  display: inline;
+  color: #eaded0;
+  font-size: 15px;
+}
+
 p {
   font-size: 9px;
   color: #eaded0;
@@ -21,8 +27,8 @@ hr {
   border-width: 3px 0 0 0;
   border-style: solid;
   border-color: #6699cc;
-  margin-bottom: 15px;
-  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 
 body {

@@ -42,10 +42,10 @@
 }
 
 <h2>map()</h2>
-optional.<span class="call">map</span> { print($<span class="number">0</span>) }
+<span class="keyword">let</span> value = optional.<span class="call">map</span>(<span class="type">String</span>.<span class="call">init</span>(describing:))
 
 <h2>flatMap()</h2>
-<span class="keyword">let</span> value = optional2.<span class="call">flatMap</span>(<span class="type">String</span>.<span class="call">init</span>(describing:))
+<span class="keyword">let</span> value = optional.<span class="call">flatMap</span>(<span class="type">URL</span>.<span class="call">init</span>(string:))
 
 <h2>compactMap()</h2>
 <span class="keyword">let</span> values = optionals.<span class="call">compactMap</span> { $<span class="number">0</span> }
@@ -69,8 +69,42 @@ optional.<span class="call">map</span> { print($<span class="number">0</span>) }
 <h2>forEach</h2>
 optionals2?.<span class="call">forEach</span> { value <span class="keyword">in</span>
 
+<h2>assignment</h2>
+<h3>only assigns if the optional has a value</h3>
+optional2? = <span class="number">2014</span>
+
+<h2>pattern matching</h2>
+<span class="keyword">switch</span> optional {
+<span class="keyword">case</span> <span class="string">"unicorn"</span>?:
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"Unicorn!"</span>)
+<span class="keyword">default</span>:
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"Not Unicorn"</span>)
+
+<h2>enums</h2>
+<span class="keyword">enum</span> Animal {
+&nbsp;&nbsp;<span class="keyword">case</span> pet(type: <span class="type">String</span>?)
+}
+
+<h3>switching with associated optionals</h3>
+<span class="keyword">let</span> enumValue = <span class="type">Animal</span>.<span class="call">pet</span>(type: optional)
+<span class="keyword">switch</span> enumValue {
+<span class="keyword">case</span> .<span class="dotAccess">pet</span>(.<span class="dotAccess">some</span>(<span class="keyword">let</span> value)):
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"I am a</span> \(value).<span class="string">"</span>)
+<span class="keyword">case</span> .<span class="dotAccess">pet</span>(.<span class="dotAccess">none</span>):
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"I am unknown."</span>)
+}
+
+<h3>switching on optional enums</h3>
+<span class="keyword">let</span> enumValue2: <span class="type">Animal</span>? = <span class="keyword">nil</span>
+<span class="keyword">switch</span> enumValue2 {
+<span class="keyword">case</span> .<span class="dotAccess">pet</span>?:
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"Pets"</span>)
+<span class="keyword">default</span>:
+&nbsp;&nbsp;<span class="call">print</span>(<span class="string">"No pets."</span>)
+}
+
 <br>
-<p>Created by <a href="https://github.com/cak">cak</a> with syntax highlighting by <a href="https://github.com/JohnSundell/Splash">Splash</a>.</p>
+<p>Created by <a href="https://github.com/cak">cak</a> (+ friends) with syntax highlighting by <a href="https://github.com/JohnSundell/Splash">Splash</a>.</p>
 <p>Contribute to this project on <a href="https://github.com/cak/optionals.org">GitHub</a>.</p>
 
 <script  src="js/index.js"></script>
