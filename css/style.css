@@ -1,7 +1,7 @@
 h2 {
   display: inline;
   color: #eaded0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 p {
@@ -35,7 +35,7 @@ body {
   margin: auto;
   border-radius: 20px;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   white-space: pre-wrap;
   word-wrap: normal;
 }
