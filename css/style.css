@@ -20,7 +20,7 @@ h1 {
 hr {
   border-width: 3px 0 0 0;
   border-style: solid;
-  border-color: #6489b8;
+  border-color: #6699cc;
   margin-bottom: 15px;
   margin-top: 20px;
 }
@@ -41,11 +41,11 @@ body {
 }
 
 span.bang {
-  color: #a44dca;
+  color: #9966cc;
 }
 
 span.quest {
-  color: #4ac361;
+  color: #33cc66;
 }
 
 span {
@@ -53,7 +53,7 @@ span {
 }
 
 span.keyword {
-  color: #a44dca;
+  color: #9966cc;
 }
 
 span.type {
@@ -61,15 +61,19 @@ span.type {
 }
 
 span.call {
-  color: #c1c319;
+  color: #cccc00;
 }
 
 span.string {
-  color: #4ac361;
+  color: #33cc66;
 }
 
 span.number {
   color: #ffb09f;
+}
+
+span.dotAccess {
+  color: #cc6600;
 }
 
 a {
