@@ -4,13 +4,15 @@ A simple cheat sheet for Swift Optionals.
 
 ## Contributions
 
-[Optionals.org](https://www.optionals.org) was designed to make contributing easy, you can send a pull request or create an issue.
+It was designed to make contributing easy and uses [Splash](https://github.com/JohnSundell/Splash) for syntax highlighting. 
+
+You can send a pull request or create an issue.
 
 ## Pull Requests
 
 ### Headings
 
-The site uses `h2` tags as section headings and `h3` headings for optional subheadings. Headings are lowercase. 
+The site uses `h2` tags as section headings and `h3` headings for optional subheadings *(headings are lowercase)*.  
 
 Example:
 ```html
@@ -20,8 +22,6 @@ Example:
 
 
 ### Code Snippet
-
-The site uses [Splash](https://github.com/JohnSundell/Splash) for syntax highlighting. 
 
 Simply use [Splash](https://github.com/JohnSundell/Splash) or [splash.rambo.codes](https://splash.rambo.codes) to create the html code. 
 
@@ -33,7 +33,7 @@ For example:
 swift run SplashHTMLGen "guard let value = optional else { return }"
 ```
 
-**Generated HTMTL**
+**Generated HTML**
 
 ```html
 <span class="keyword">guard let</span> value = optional <span class="keyword">else</span> { <span class="keyword">return</span> }
@@ -47,4 +47,4 @@ swift run SplashHTMLGen "guard let value = optional else { return }"
 ```
 
 
-Note: Use `&nbsp;&nbsp;` for indent spacing. 
+*Note: Use `&nbsp;&nbsp;` for indent spacing* 
