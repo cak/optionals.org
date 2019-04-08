@@ -1,13 +1,15 @@
 h2 {
   display: inline;
   color: #eaded0;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 h3 {
   display: inline;
   color: #eaded0;
   font-size: 14px;
+  font-weight: bold;
 }
 
 p {
@@ -21,6 +23,7 @@ h1 {
   text-align: center;
   color: #eaded0;
   font-size: 55px;
+  font-weight: bold;
 }
 
 hr {
@@ -47,10 +50,8 @@ body {
   background-color: #0b121c;
   color: #ccccff;
   text-align: left;
-  padding: 0px 0px 5px 2px;
   width: 90%;
   margin: auto;
-  border-radius: 20px;
   display: block;
   font-size: 14px;
   white-space: pre-wrap;
