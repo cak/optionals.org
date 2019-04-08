@@ -21,6 +21,12 @@
 <h2>if let</h2>
 <span class="keyword">if let</span> value = optional {
 
+<h3>multiple variables</h3>
+<span class="keyword">if let</span> value = optional, <span class="keyword">let</span> value2 = optional2 {
+
+<h3>boolean clause</h3>
+<span class="keyword">if let</span> value = optional, value.<span class="call">hasSuffix</span>(<span class="string">"saurus"</span>)
+
 <h2>guard</h2>
 <span class="keyword">guard let</span> value = optional <span class="keyword">else</span> { <span class="keyword">return</span> }
 
